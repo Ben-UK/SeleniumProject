@@ -1,5 +1,4 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,6 +10,8 @@ public class Main {
 	static WebDriver driver;
 
 	public static void main(String[] args) {
+		
+		System.out.println("Attempting to Log Into Facebook...");
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Desktop\\Selenium\\chromedriver.exe");
 		// System.setProperty("webdriver.gecko.driver",
@@ -54,6 +55,7 @@ public class Main {
 		else
 			System.out.println("---Facebook let you login with just \"admin\" and \"password\"---");
 		driver.close();
+		System.out.println("Exiting...");
 		System.exit(0);
 	}
 
